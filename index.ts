@@ -42,7 +42,7 @@ const tag2: number | boolean | string = 23; //* THe tag2 variable, can either co
 console.log(tag, tag2);
 
 //! ENUMERATORS OR ENUMS
-//* Enums in typescript help us defined a set of named constants that are typically mapped to a numerical value. 
+//* Enums in typescript help us defined a set of named constants that are typically mapped to a numerical value.
 enum days {
   Sunday = 1,
   Monday,
@@ -50,9 +50,24 @@ enum days {
   Wednesday,
   Thursday,
   Friday,
-  Saturday
+  Saturday,
 }
 
-let today: any = days[0]
+let today: any = days[5];
 console.log(today);
-//* So, enumerators in TypeScript help us give names to numbers, making our code easier to read and understand.```
+//* So, enumerators in TypeScript help us give names to numbers, making our code easier to read and understand.
+
+//* We can also assign stings in place of numbers.
+
+enum days2 {
+  Sunday = "Sunday",
+  Monday = "Monday",
+  Tuesday = "Tuesday",
+  Wednesday = "Wednesday",
+  Thursday = "Thursday",
+  Friday = "Friday",
+  Saturday = "Saturday",
+}
+let day: string = days2.Sunday
+
+console.log(day);
