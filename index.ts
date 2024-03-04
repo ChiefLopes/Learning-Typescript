@@ -68,6 +68,28 @@ enum days2 {
   Friday = "Friday",
   Saturday = "Saturday",
 }
-let day: string = days2.Sunday
+let day: string = days2.Sunday;
 
 console.log(day);
+
+//! OBJECTS
+//*  You can specify the types of the properties in an object using type annotations in typescript
+
+type Lopes1 = {
+  // USed the "type" keyword to declare types for the "Lopes"
+  id: number,
+  name: string,
+  age: number,
+  job: string,
+  post?: number, //* The "?" sign after the post indicates that the post type is optional
+};
+
+const Lopes: Lopes1 = {
+  id: 1,
+  name: "Louis Peace",
+  age: 45,
+  job: "software engineer",
+  post: 2
+};
+
+console.log(Lopes);

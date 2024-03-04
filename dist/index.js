@@ -58,3 +58,11 @@ var days2;
 })(days2 || (days2 = {}));
 let day = days2.Sunday;
 console.log(day);
+const Lopes = {
+    id: 1,
+    name: "Louis Peace",
+    age: 45,
+    job: "software engineer",
+    post: 2
+};
+console.log(Lopes);
