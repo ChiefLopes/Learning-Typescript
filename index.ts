@@ -95,7 +95,7 @@ const Lopes: Lopes1 = {
 console.log(Lopes);
 
 //! TYPE ASSERTION
-//* Type assertion in JavaScript is a way to tell the TypeScript compiler that you know more about the type of a value than TypeScript does. It's like a way of casting or converting a variable from one type to another, but without actually performing any runtime checks or conversions. 
+//* Type assertion in JavaScript is a way to tell the TypeScript compiler that you know more about the type of a value than TypeScript does. It's like a way of casting or converting a variable from one type to another, but without actually performing any runtime checks or conversions.
 /*
 Type assertion is helpful when you're working with values that TypeScript cannot infer the type of accurately, 
 such as when dealing with dynamic data, data from external sources, 
@@ -105,8 +105,21 @@ as incorrect type assertions can lead to runtime errors. */
 
 // T
 
-const value: any = "This is a value"
-let strLength = (<string>value).length;
+const value: any = "This is a value";
+
+//* Type assertion can be done in 2 ways. One is by using the "as" keyword and the other is by using the angle-brackets
+let strLength = (value as string).length; //* USing the "as" keyword
+let strLength1 = (<string>value).length;  //* Using the angle bracket <.....>
 
 console.log(value);
-console.log(strLength)
+console.log(strLength);
+console.log(strLength1);
+
+
+//! FUNCTIONS
+function addNum(x:number, y:number): number {
+  return x + y
+
+}
+
+console.log(addNum(2,4));
