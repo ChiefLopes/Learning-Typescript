@@ -74,6 +74,7 @@ such as when dealing with dynamic data, data from external sources,
 or when migrating code from JavaScript to TypeScript. However,
 it's important to use type assertion carefully and only when you're certain about the type of the variable,
 as incorrect type assertions can lead to runtime errors. */
+// T
 const value = "This is a value";
 let strLength = value.length;
 console.log(value);

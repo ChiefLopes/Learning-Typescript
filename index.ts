@@ -103,8 +103,10 @@ or when migrating code from JavaScript to TypeScript. However,
 it's important to use type assertion carefully and only when you're certain about the type of the variable, 
 as incorrect type assertions can lead to runtime errors. */
 
+// T
+
 const value: any = "This is a value"
-let strLength: number = (<string>value).length;
+let strLength = (<string>value).length;
 
 console.log(value);
-console.log(strLength);
+console.log(strLength)
