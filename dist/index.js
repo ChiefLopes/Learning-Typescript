@@ -63,6 +63,16 @@ const Lopes = {
     name: "Louis Peace",
     age: 45,
     job: "software engineer",
-    post: 2
+    post: 2,
 };
 console.log(Lopes);
+//! TYPE ASSERTION
+//* Type assertion in JavaScript is a way to tell the TypeScript compiler that you know more about the type of a value than TypeScript does. It's like a way of casting or converting a variable from one type to another, but without actually performing any runtime checks or conversions. 
+/*
+Type assertion is helpful when you're working with values that TypeScript cannot infer the type of accurately,
+such as when dealing with dynamic data, data from external sources,
+or when migrating code from JavaScript to TypeScript. However,
+it's important to use type assertion carefully and only when you're certain about the type of the variable,
+as incorrect type assertions can lead to runtime errors. */
+const value = 23;
+console.log(value);
