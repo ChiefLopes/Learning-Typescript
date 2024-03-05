@@ -132,3 +132,15 @@ function greeting(greet: string): void {
 }
 
 greeting("hello");
+
+//! INTERFACES
+//* interface is a typescript-only feature which helps define the shape of an object. Interface helps you defien the types(in terms of shapes and methds) to be found in an object.
+
+interface Person {
+  name: string;
+  age: number;
+  comp?: string;
+  greet?: () => void;
+}
+
+
