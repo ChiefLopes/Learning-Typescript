@@ -109,17 +109,26 @@ const value: any = "This is a value";
 
 //* Type assertion can be done in 2 ways. One is by using the "as" keyword and the other is by using the angle-brackets
 let strLength = (value as string).length; //* USing the "as" keyword
-let strLength1 = (<string>value).length;  //* Using the angle bracket <.....>
+let strLength1 = (<string>value).length; //* Using the angle bracket <.....>
 
 console.log(value);
 console.log(strLength);
 console.log(strLength1);
 
-
 //! FUNCTIONS
-function addNum(x:number, y:number): number {
-  return x + y
-
+function addNum(x: number, y: number): number {
+  return x + y;
 }
 
-console.log(addNum(2,4));
+console.log(addNum(2, 4));
+
+//! The VOID type
+/** The void type returns In TypeScript, the void type represents the absence of any type.
+It is commonly used to indicate that a function does not return any value.
+Functions declared with a return type of void explicitly specify that they do not return a value, or they return undefined. */
+
+function greeting(greet: string): void {
+  console.log(greet);
+}
+
+greeting("hello");

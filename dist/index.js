@@ -87,3 +87,11 @@ function addNum(x, y) {
     return x + y;
 }
 console.log(addNum(2, 4));
+//! The VOID type
+/** The void type returns In TypeScript, the void type represents the absence of any type.
+It is commonly used to indicate that a function does not return any value.
+Functions declared with a return type of void explicitly specify that they do not return a value, or they return undefined. */
+function greeting(greet) {
+    console.log(greet);
+}
+greeting("hello");
